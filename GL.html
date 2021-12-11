@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="GL.css"/>
+    <script src="GL.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Secular+One&family=Source+Code+Pro:wght@600&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@300&family=Secular+One&family=Source+Code+Pro:wght@600&family=Staatliches&display=swap" rel="stylesheet"><title>Grocery List</title>
+  </head>
+  
+  <body>
+  <!--value input-->
+    <div id="container">
+        <div id="gro-list-div">
+            <div id="header-div">
+                <h2>GROCERY LIST</h2>
+            </div>
+            <div id="input-submit-div">
+                <div id="input-div">
+                    <input type="text" id="text" autocomplete="off" placeholder="Enter item">
+                </div>
+                <div id="submit-btn-div">
+                    <i class="fas fa-arrow-alt-circle-down"></i>
+                    <button type="submit" id="add-to-list-btn" onclick="addListItem();clearInput()">Add Item</button>
+                </div>
+            </div>
+            <!--list-->
+            <div id="item-list-div">
+                <ul id="list"></ul> 
+            </div>
+            <div id="clear-btn-div"> 
+                <button id="clear-btn" onclick="clearList()">Clear Items</button> 
+            </div>
+        </div>
+    </div>
+  </body>
+  
+  
